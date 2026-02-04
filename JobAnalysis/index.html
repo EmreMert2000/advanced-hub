@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mülakat Hazırlık & Veri Yapıları</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Teknik Mülakat Hazırlık & Data Structures</h1>
+            <p>HTML, CSS, JS, SQL Soruları ve JavaScript ile Veri Yapıları Örnekleri</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="ds">Veri Yapıları (JS)</button>
+            <button class="tab-btn" data-tab="html">HTML</button>
+            <button class="tab-btn" data-tab="css">CSS</button>
+            <button class="tab-btn" data-tab="js">JavaScript</button>
+            <button class="tab-btn" data-tab="sql">SQL</button>
+            <button class="tab-btn" data-tab="job">İş Özel (Analist)</button>
+        </nav>
+
+        <main class="content">
+            <!-- Data Structures Section -->
+            <section id="ds" class="tab-content active">
+                <h2>JavaScript Veri Yapıları</h2>
+                <div class="ds-grid">
+                    <div class="card">
+                        <h3>Stack (Yığın)</h3>
+                        <p>LIFO (Last In First Out) prensibi ile çalışır.</p>
+                        <div class="code-block" id="stack-output">Output: Waiting...</div>
+                        <button onclick="runStackDemo()">Demo Çalıştır</button>
+                    </div>
+                    <div class="card">
+                        <h3>Queue (Kuyruk)</h3>
+                        <p>FIFO (First In First Out) prensibi ile çalışır.</p>
+                        <div class="code-block" id="queue-output">Output: Waiting...</div>
+                        <button onclick="runQueueDemo()">Demo Çalıştır</button>
+                    </div>
+                    <div class="card">
+                        <h3>Linked List (Bağlı Liste)</h3>
+                        <p>Elemanların birbirini işaret ettiği doğrusal yapı.</p>
+                        <div class="code-block" id="ll-output">Output: Waiting...</div>
+                        <button onclick="runLinkedListDemo()">Demo Çalıştır</button>
+                    </div>
+                    <div class="card">
+                        <h3>Binary Search Tree (BST)</h3>
+                        <p>Her düğümün en fazla iki çocuğa sahip olduğu ağaç yapısı.</p>
+                        <div class="code-block" id="bst-output">Output: Waiting...</div>
+                        <button onclick="runBSTDemo()">Demo Çalıştır</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HTML Section -->
+            <section id="html" class="tab-content">
+                <h2>HTML Mülakat Soruları</h2>
+                <div class="qa-list" id="html-qa">
+                    <!-- JS ile doldurulacak -->
+                </div>
+            </section>
+
+            <!-- CSS Section -->
+            <section id="css" class="tab-content">
+                <h2>CSS Mülakat Soruları</h2>
+                <div class="qa-list" id="css-qa">
+                     <!-- JS ile doldurulacak -->
+                </div>
+            </section>
+
+            <!-- JS Section -->
+            <section id="js" class="tab-content">
+                <h2>JavaScript Mülakat Soruları</h2>
+                <div class="qa-list" id="js-qa">
+                     <!-- JS ile doldurulacak -->
+                </div>
+            </section>
+
+            <!-- SQL Section -->
+            <section id="sql" class="tab-content">
+                <h2>SQL Mülakat Soruları</h2>
+                <div class="qa-list" id="sql-qa">
+                     <!-- JS ile doldurulacak -->
+                </div>
+            </section>
+
+            <!-- Job Special Section -->
+            <section id="job" class="tab-content">
+                <h2>İş İlanı Özel Mülakat Soruları (Analist/Pre-Sales)</h2>
+                <div class="qa-list" id="job-qa">
+                     <!-- JS ile doldurulacak -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
